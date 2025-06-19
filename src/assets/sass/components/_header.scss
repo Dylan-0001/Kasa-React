@@ -1,0 +1,34 @@
+header
+{
+    display: flex;
+    justify-content: space-between;    
+    margin: 20px 70px;
+
+    img
+    {
+        width: 122px;
+        height: 38px;
+    }
+
+    nav
+    {
+        display: grid;
+        place-items: center;
+
+        ul
+        {
+            display: flex;
+            gap: 3em;
+        }
+    }
+
+    .active
+    {
+        text-decoration: underline;
+    }
+
+    @include responsive(mobile)
+    {
+        margin: 10px 20px;
+    }
+}

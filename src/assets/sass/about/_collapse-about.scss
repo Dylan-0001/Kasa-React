@@ -1,0 +1,65 @@
+.collapse
+{
+    margin: 80px 120px;
+
+    .collapse-item 
+    {
+        background-color: $primary-color;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        color: white;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        .title 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 15px;
+            height: 60px;
+        }
+
+        h1
+        {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        i 
+        {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+            font-size: 25px;
+        }
+
+        &.active
+        {
+            i
+            {
+                transform: rotate(0deg);
+            }
+
+            .description
+            {
+                transition: 0.3s ease; 
+                padding: 10px;
+                font-size: 18px;
+                background-color: rgb(230, 230, 230);
+                
+                h2
+                {
+                    color: black;
+                    font-size: 20px;
+                    margin: 10px 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    @include responsive(mobile)
+    {
+        margin: 20px 20px;
+    } 
+}
