@@ -1,0 +1,121 @@
+.logement-informations
+{
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    
+    .infos
+    {
+        .title
+        {
+            color: $primary-color;
+            font-size: 36px;
+            font-weight: 500;
+            max-width: 550px;
+        }
+
+        .location
+        {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+
+        .tags
+        {
+            display: flex;
+            gap: 10px;
+
+            .tag
+            {
+                color: white;
+                font-size: 14px;
+                font-weight: 700;
+                background-color: $primary-color;
+                padding: 5px 30px;
+                border-radius: 10px;
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .details
+    {  
+        display: block;   
+        .host-infos
+        {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+
+
+            p {
+                display: flex;
+                font-size: 18px;
+                font-weight: 500;
+                color: $primary-color;
+                line-height: 1.5;
+                text-align: right;
+                width: 40%;
+            }
+
+            img 
+            {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+
+                @include responsive(mobile)
+                {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+
+        .rating
+        {
+            margin-top: 40px;
+            display: flex;
+            justify-content: end;
+
+            i
+            {
+                margin: 0 7px;
+                font-size: 20px;
+                color: rgba(227, 227, 227, 1);
+
+                &.active
+                {
+                    color: $primary-color;
+                }
+
+                @include responsive(mobile)
+                {
+                    font-size: 17px;
+                    margin: 0 5px;
+                }
+            }
+
+        }
+
+        @include responsive(mobile)
+        {
+            margin: 30px 0;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    @include responsive(mobile)
+    {
+        margin: 40px 20px;
+        display: block;
+    }
+}

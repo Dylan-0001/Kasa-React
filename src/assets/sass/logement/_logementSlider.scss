@@ -1,0 +1,56 @@
+.logement-slider 
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 80px;
+	min-height: 600px;
+	position: relative;
+
+    .slider-image 
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+    }
+
+    .arrow 
+    {
+	    position: absolute;
+        margin: 0 20px;
+    }
+
+    .arrow_left 
+    {
+	    left: 10px;
+    }
+
+    .arrow_right 
+    {
+	    right: 10px;
+    }
+
+    .slider-infos
+    {
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 530px;
+
+        @include responsive(mobile)
+        {
+            display: none;
+        }
+    }
+
+    @include responsive(mobile)
+    {
+        margin: 40px 20px;
+        border-radius: 10px;
+    }
+}
