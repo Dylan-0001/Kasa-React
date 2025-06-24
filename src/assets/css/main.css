@@ -105,7 +105,7 @@ footer .container .legal p {
   }
 }
 
-.home-hero {
+.hero-banner {
   position: relative;
   height: 200px;
   margin: 40px 80px;
@@ -121,20 +121,20 @@ footer .container .legal p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.home-hero img {
+.hero-banner img {
   position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home-hero .overlay {
+.hero-banner .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
-.home-hero p {
+.hero-banner p {
   position: relative;
   z-index: 2;
   color: white;
@@ -144,7 +144,7 @@ footer .container .legal p {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 @media (max-width: 480px) {
-  .home-hero p {
+  .hero-banner p {
     -webkit-text-stroke: 0px;
     font-size: 22px;
     text-align: left;
@@ -153,7 +153,7 @@ footer .container .legal p {
   }
 }
 @media (max-width: 480px) {
-  .home-hero {
+  .hero-banner {
     margin: 40px 20px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -257,45 +257,6 @@ footer .container .legal p {
   }
 }
 
-.about-hero {
-  position: relative;
-  height: 200px;
-  margin: 40px 80px;
-  overflow: hidden;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.about-hero img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.about-hero .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-@media (max-width: 480px) {
-  .about-hero {
-    margin: 40px 20px;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    border-radius: 10px;
-  }
-}
-
 .collapse {
   margin: 80px 120px;
 }
@@ -333,6 +294,7 @@ footer .container .legal p {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 25px;
+  cursor: pointer;
 }
 .collapse .collapse-item.active i {
   -webkit-transform: rotate(0deg);
@@ -389,6 +351,7 @@ footer .container .legal p {
 .logement-slider .arrow {
   position: absolute;
   margin: 0 20px;
+  cursor: pointer;
 }
 .logement-slider .arrow_left {
   left: 10px;
@@ -580,6 +543,7 @@ footer .container .legal p {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 25px;
+  cursor: pointer;
 }
 .logement_others .collapse-item.active i {
   -webkit-transform: rotate(0deg);

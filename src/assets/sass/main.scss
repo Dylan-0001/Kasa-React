@@ -8,16 +8,15 @@
 //CSS HEADER & FOOTER
 @import './components/header';
 @import './components/footer';
+@import './components/heroBanner';
 
 //CSS HOME PAGE
-@import './home/hero-home';
 @import './home/logements-gallery';
 
 //CSS 404 ERROR PAGE
 @import './404/page-error';
 
 //CSS ABOUT PAGE
-@import './about/hero-about';
 @import './about/collapse-about';
 
 //CSS LOGEMENT PAGE

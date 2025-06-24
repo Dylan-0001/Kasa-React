@@ -18,10 +18,15 @@ export const LogementSlider = ( {pictures} ) => {
         <section className="logement-slider">
             <img src={pictures[currentSlide]} className="slider-image" alt="Slider images"/>
             
-            <img src={ArrowLeft} onClick={handlePrev} className="arrow arrow_left" alt="Flèche gauche"/>
-		    <img src={ArrowRight} onClick={handleNext} className="arrow arrow_right" alt="Flèche droite"/>
+            {pictures.length > 1 &&(
+                <>
+                    <img src={ArrowLeft} onClick={handlePrev} className="arrow arrow_left" alt="Flèche gauche"/>
+                    <img src={ArrowRight} onClick={handleNext} className="arrow arrow_right" alt="Flèche droite"/>
 
-            <p className="slider-infos"> {currentSlide + 1}/{pictures.length} </p>
+                    <p className="slider-infos"> {currentSlide + 1}/{pictures.length} </p>
+                </>
+            )}
+
         </section>
     )
 };
