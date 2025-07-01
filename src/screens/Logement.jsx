@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom"
 import logements from './../assets/data/logements.json'
-import { LogementSlider } from "./logement/LogementSlider";
 import { LogementInformations } from "./logement/LogementInformations";
 import { LogementCollapse } from "./logement/LogementCollapse.jsx";
+
+import { Slider } from "../components/Slider.jsx";
 
 export const Logement = () =>{
     
@@ -11,7 +12,7 @@ export const Logement = () =>{
 
     return(
         <div>
-            <LogementSlider key={logement.id} pictures={logement.pictures} />
+            <Slider key={logement.id} pictures={logement.pictures} />
             <LogementInformations key={logement.id} logement={logement} />
             <LogementCollapse key={logement.id} logement={logement}/>
         </div>

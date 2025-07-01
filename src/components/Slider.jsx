@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import ArrowLeft from './../../assets/images/arrow_left.png';
-import ArrowRight from './../../assets/images/arrow_right.png';
+import ArrowLeft from './../assets/images/arrow_left.png'
+import ArrowRight from './../assets/images/arrow_right.png';
 
-export const LogementSlider = ( {pictures} ) => {
+export const Slider = ( {pictures} ) => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -15,7 +15,7 @@ export const LogementSlider = ( {pictures} ) => {
     }
 
     return (
-        <section className="logement-slider">
+        <section className="slider">
             <img src={pictures[currentSlide]} className="slider-image" alt="Slider images"/>
             
             {pictures.length > 1 &&(
@@ -26,7 +26,6 @@ export const LogementSlider = ( {pictures} ) => {
                     <p className="slider-infos"> {currentSlide + 1}/{pictures.length} </p>
                 </>
             )}
-
         </section>
     )
 };

@@ -162,6 +162,64 @@ footer .container .legal p {
   }
 }
 
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 80px;
+  min-height: 600px;
+  position: relative;
+}
+.slider .slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 25px;
+}
+.slider .arrow {
+  position: absolute;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.slider .arrow_left {
+  left: 10px;
+}
+.slider .arrow_right {
+  right: 10px;
+}
+.slider .slider-infos {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 530px;
+}
+@media (max-width: 480px) {
+  .slider .slider-infos {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .slider {
+    margin: 40px 20px;
+    border-radius: 10px;
+  }
+}
+
 .logements-gallery {
   position: relative;
   margin: 40px 80px;
@@ -316,64 +374,6 @@ footer .container .legal p {
 @media (max-width: 480px) {
   .collapse {
     margin: 20px 20px;
-  }
-}
-
-.logement-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 40px 80px;
-  min-height: 600px;
-  position: relative;
-}
-.logement-slider .slider-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 25px;
-}
-.logement-slider .arrow {
-  position: absolute;
-  margin: 0 20px;
-  cursor: pointer;
-}
-.logement-slider .arrow_left {
-  left: 10px;
-}
-.logement-slider .arrow_right {
-  right: 10px;
-}
-.logement-slider .slider-infos {
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 530px;
-}
-@media (max-width: 480px) {
-  .logement-slider .slider-infos {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .logement-slider {
-    margin: 40px 20px;
-    border-radius: 10px;
   }
 }
 

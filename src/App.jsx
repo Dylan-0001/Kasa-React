@@ -34,6 +34,8 @@ const router = createBrowserRouter([
   }
 ]);
 
+//TODO METTRE SLIDER EN COMPONENT
+
 function App() {
   return <RouterProvider router={router}/>;
 }

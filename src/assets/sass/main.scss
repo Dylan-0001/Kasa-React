@@ -9,6 +9,7 @@
 @import './components/header';
 @import './components/footer';
 @import './components/heroBanner';
+@import './components/slider';
 
 //CSS HOME PAGE
 @import './home/logements-gallery';
@@ -20,6 +21,5 @@
 @import './about/collapse-about';
 
 //CSS LOGEMENT PAGE
-@import './logement/logementSlider';
 @import './logement/logementInformations';
 @import './logement/logementCollapse'

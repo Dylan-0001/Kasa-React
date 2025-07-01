@@ -8,13 +8,17 @@ export const Header = () =>{
             <img src={Logo} alt="Logo Kasa" />
             <nav>
                 <ul>
-                    <NavLink to='/'>
-                        <li>Accueil</li>
-                    </NavLink>
+                    <li>
+                        <NavLink to='/'>
+                            Acceuil
+                        </NavLink>
+                    </li>
 
-                    <NavLink to='/about'>
-                        <li>A Propos</li>
-                    </NavLink>
+                    <li>
+                        <NavLink to='/about'>
+                            A Propos
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
