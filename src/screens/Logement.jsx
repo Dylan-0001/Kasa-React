@@ -5,16 +5,30 @@ import { LogementCollapse } from "./logement/LogementCollapse.jsx";
 
 import { Slider } from "../components/Slider.jsx";
 
+import { PageError } from "./404.jsx";
+
 export const Logement = () =>{
     
     const {id} = useParams();
     const logement = logements.find((logement) => logement.id === id);
 
-    return(
-        <div>
-            <Slider key={logement.id} pictures={logement.pictures} />
-            <LogementInformations key={logement.id} logement={logement} />
-            <LogementCollapse key={logement.id} logement={logement}/>
-        </div>
-    );
+    
+    if(!logement)
+    {
+         return(
+            <>
+                <PageError/>
+            </>
+        )
+    }
+    else
+    {
+        return(
+            <div>
+                <Slider key={logement.id} pictures={logement.pictures} />
+                <LogementInformations key={logement.id} logement={logement} />
+                <LogementCollapse key={logement.id} logement={logement}/>
+            </div>
+        );
+    }
 }

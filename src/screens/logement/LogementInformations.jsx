@@ -1,4 +1,3 @@
-
 export const LogementInformations = ( {logement} ) => {
 
     const rating_value = parseInt(logement.rating);
